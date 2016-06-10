@@ -7,9 +7,9 @@ class FormController {
         println(params)
 
         render(params)
-        redirect(controller: "form", action: "redireted")
+        redirect(controller: "form", action: "redireted", params: [Uname : "${params.Uname}"] )
     }
     def redireted(){
-        render("page is redirected")
+        render("page is redirected. Welcome ${params.Uname}")
     }
 }
