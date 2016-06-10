@@ -7,5 +7,9 @@ class FormController {
         println(params)
 
         render(params)
+        redirect(controller: "form", action: "redireted")
+    }
+    def redireted(){
+        render("page is redirected")
     }
 }
