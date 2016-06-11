@@ -12,6 +12,6 @@
 </head>
 
 <body>
-    <p> Hello ${Uname}</p>
+    <p> Hello ${keyval.myUser}</p>
 </body>
 </html>
