@@ -9,6 +9,9 @@ class User {
     void myTask(){
         myUser = myUser.toUpperCase()
         myEmail = myEmail.toUpperCase()
-        myPass = myPass.toUpperCase()
+    }
+
+    boolean checkPasswordLength() {
+        return myPass.length() > 4
     }
 }
