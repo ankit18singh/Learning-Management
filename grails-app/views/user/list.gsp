@@ -10,19 +10,21 @@
 <head>
     <title></title>
 </head>
-    <table>
+    <table border="1px solid black">
         <thead>
             <th>UserName</th>
             <th>LastName</th>
+            <th>Password</th>
         </thead>
-        <tr>
-            <td>
-                ${allUsers.myFirstName}<br>
-            </td>
-            <td>
-                ${allUsers.myLastName}<br>
-            </td>
-        </tr>
+        <tbody>
+            <g:each in="${allUsers}">
+                <tr>
+                <td>${it.myFirstName}</td>
+                <td>${it.myLastName}</td>
+                <td>${it.myPassword}</td>
+                </tr>
+            </g:each>
+        </tbody>
     </table>
 <body>
 

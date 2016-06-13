@@ -10,8 +10,11 @@
 <head>
     <title></title>
 </head>
-    <p>Username : ${recentlySavedUser.myFirstName}</p>
-    <p><g:link action="list">Click here to check all the Users who logged in </g:link></p>
+        <p>Firstname : ${recentlySavedUser.myFirstName}</p>
+        <p>Lastname : ${recentlySavedUser.myLastName}</p>
+        <p>Password : ${recentlySavedUser.myPassword}</p>
+
+        <p><g:link action="list">Click here to check all the Users who logged in </g:link></p>
 <body>
 
 </body>
