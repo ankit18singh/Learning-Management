@@ -12,7 +12,6 @@ class UserController {
         SaveData sa = new SaveData([myFirstName: params.firstName, myLastName: params.lastName, myPassword: params.Password])
 
         session.recentlySavedUser = sa
-
         if (!session.allUsers) {
             session.allUsers = []
         }

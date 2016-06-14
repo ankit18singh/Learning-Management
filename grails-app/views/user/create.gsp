@@ -9,22 +9,30 @@
 <html>
 <head>
     <title></title>
+    <asset:stylesheet src="bootstrap.min.css">
+    </asset:stylesheet>
+    <asset:javascript src="jquery.min.css"></asset:javascript>
+    <asset:javascript src="bootstrap.min.css"></asset:javascript>
 </head>
-    <g:form name="myForm" action="save" method="post">
+    <div class="container" style="background-color: #006dba">
+        <center>
+    <g:form name="myForm" action="save" method="post" class="form-horizontal">
         <label for="firstName">
             FirstName:
         </label><g:textField name="firstName">
         </g:textField> <br>
         <label for="lastName">
-            LastName:&nbsp;
+            Last Name:
         </label><g:textField name="lastName"> LastName
         </g:textField><br>
         <label for="Password">
-            FirstName:
+            Pass word:
         </label><g:passwordField name="Password"> Password
         </g:passwordField><br>
-        <g:submitButton name="submit">Submit</g:submitButton>
+        <g:submitButton name="submit" class="btn-success">Submit</g:submitButton>
     </g:form>
+        </center>
+    </div>
 <body>
 </body>
 </html>

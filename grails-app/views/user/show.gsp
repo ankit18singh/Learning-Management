@@ -9,6 +9,11 @@
 <html>
 <head>
     <title></title>
+
+    <asset:stylesheet src="bootstrap.min.css">
+    </asset:stylesheet><asset:javascript src="jquery.min.css"></asset:javascript>
+    <asset:javascript src="bootstrap.min.css"></asset:javascript>
+
 </head>
         <p>Firstname : ${recentlySavedUser.myFirstName}</p>
         <p>Lastname : ${recentlySavedUser.myLastName}</p>

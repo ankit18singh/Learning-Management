@@ -9,8 +9,12 @@
 <html>
 <head>
     <title></title>
+    <asset:stylesheet src="bootstrap.min.css">
+    </asset:stylesheet>
+    <asset:javascript src="jquery.min.css"></asset:javascript>
+    <asset:javascript src="bootstrap.min.css"></asset:javascript>
 </head>
-    <table border="1px solid black">
+    <table class=" table table-striped">
         <thead>
             <th>UserName</th>
             <th>LastName</th>
