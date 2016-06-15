@@ -8,11 +8,12 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
+    <meta name='layout' content="template">
     <title>ShowPage</title>
 
 </head>
 <body>
-    <g:render template="/assignment/template"/>
+
     <div class="container text-center heading">
         <h1 class="text-capitalize">Current User Details</h1>
     </div>

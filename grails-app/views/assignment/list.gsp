@@ -8,12 +8,13 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
+    <meta name='layout' content="template">
     <title>ListPage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 
 <body>
-    <g:render template="/assignment/template"/>
     <div class="container text-center heading">
         <h1 class="text-capitalize">All User Details</h1>
     </div>

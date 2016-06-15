@@ -8,18 +8,19 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
+    <meta name='layout' content="template">
     <title>Login</title>
-
+    <link rel="stylesheet" href="${resource(dir: 'css', file: 'temp.css')}" type="text/css">
 </head>
 
 <body>
-        <g:render template="/assignment/template"/>
+
         <div class="container text-center heading">
             <h1 class="text-capitalize">Login Page</h1>
         </div>
 
         <div class="container formdiv text-center">
-            <g:form action="show" class="form-horizontal">
+            <g:form action="abc" class="form-horizontal">
                 <div class="form-group">
                     <label for="fullname" class="col-sm-2 control-label">FullName:</label>
                     <div class="col-sm-10">

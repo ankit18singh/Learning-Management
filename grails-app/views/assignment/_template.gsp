@@ -31,6 +31,9 @@
             #linkcol{
                 color:white;
             }
+            .active> #linkcol{
+                color:blue;
+            }
             table{
                 background-color: #ffffff;
             }
@@ -54,9 +57,11 @@
 
                         <div class="collapse navbar-collapse" id="divButton">
                                 <ul class="nav navbar-nav navbar-right">
-                                    <li><g:link action="userLogin" elementId="linkcol"> LoginPage</g:link></li>
-                                    <li><g:link action="show" elementId="linkcol">ShowPage</g:link> </li>
-                                    <li><g:link action="list" elementId="linkcol"> ListPage</g:link> </li>
+                                    <li  class =${!CurrentPage.equals('userLogin')? "":'active' }>
+                                        <g:link action="userLogin" elementId="linkcol"> LoginPage</g:link>
+                                    </li>
+                                    <li class =${CurrentPage.equals('show')? "active":'' }><g:link action="show" elementId="linkcol">ShowPage</g:link> </li>
+                                    <li class =${CurrentPage.equals('list')? "active":'' }><g:link action="list" elementId="linkcol"> ListPage</g:link> </li>
                                 </ul>
                         </div>
                     </div>
