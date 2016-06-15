@@ -9,16 +9,16 @@
 <html>
 <head>
     <title>ListPage</title>
-    <g:render template="/assignment/template"/>
+
 </head>
 
 <body>
-    
+    <g:render template="/assignment/template"/>
     <div class="container text-center heading">
         <h1 class="text-capitalize">All User Details</h1>
     </div>
     <div class="container">
-        <table class="table table-hover table-bordered">
+        <table class="table table-hover">
             <thead>
                 <th>FullName</th>
                 <th>UserName</th>
@@ -28,24 +28,13 @@
             </thead>
             <tbody>
                 <g:each in="${ListAll}" var="content">
-                    <g:if test="${content.myAge < 20}">
-                        <tr class="bg-danger">
+                        <tr class="${content.myAge < 20 ? 'bg-danger':''}">
                             <td>${content.myFullName}</td>
                             <td>${content.myUserName}</td>
                             <td>${content.myEmail}</td>
                             <td>${content.myPassword}</td>
                             <td>${content.myAge}</td>
                         </tr>
-                    </g:if>
-                    <g:else>
-                    <tr>
-                        <td>${content.myFullName}</td>
-                        <td>${content.myUserName}</td>
-                        <td>${content.myEmail}</td>
-                        <td>${content.myPassword}</td>
-                        <td>${content.myAge}</td>
-                    </tr>
-                    </g:else>
                 </g:each>
             </tbody>
         </table>

@@ -9,19 +9,26 @@
 <html>
 <head>
     <title>ShowPage</title>
-    <g:render template="/assignment/template"/>
+
 </head>
 <body>
-
+    <g:render template="/assignment/template"/>
     <div class="container text-center heading">
         <h1 class="text-capitalize">Current User Details</h1>
     </div>
     <div class="container text-justify formdiv">
-        <p>FullName : ${Current.myFullName}</p>
-        <p>UserName : ${Current.myUserName}</p>
-        <p>Email-ID : ${Current.myEmail}</p>
-        <p>Password : ${Current.myPassword}</p>
-        <p>Age : ${Current.myAge}</p>
+        <dl class="dl-horizontal">
+            <dt>Full Name:</dt>
+                <dd>${Current.myFullName}</dd>
+            <dt>User Name:</dt>
+                <dd>${Current.myUserName}</dd>
+            <dt>Email ID:</dt>
+                <dd>${Current.myEmail}</dd>
+            <dt>Password:</dt>
+                <dd>${Current.myPassword}</dd>
+            <dt>Age:</dt>
+                <dd>${Current.myAge}</dd>
+        </dl>
     </div>
 </body>
 </html>

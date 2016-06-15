@@ -3,13 +3,16 @@
         <title></title>
         <asset:stylesheet src="bootstrap.min.css"/>
         <style>
+                body{
+                    background: linear-gradient(#ffffff, #9d9d9d);
+                }
                 .formdiv{
                     width: 40%;
                     margin: auto;
                     box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
                     padding: 4%;
                     border-radius: 7%;
-                    background-color: #006dba;
+                    background: linear-gradient(to left, #008db7,#006dba);
                     color: #ffffff;
                 }
                 .heading{
@@ -17,23 +20,24 @@
                     text-align: center;
                 }
                 th{
-                    background-color: #006dba;
+                    background: linear-gradient( #008db7,#006dba);
                     color: white;
 
                 }
             .navbar{
-                    background-color: #006dba;
+                    background: linear-gradient( #008db7,#006dba);
                     color:white;
                 }
             #linkcol{
                 color:white;
             }
+            table{
+                background-color: #ffffff;
+            }
 
         </style>
-        <asset:javascript src="bootstrap.min.js"/>
         <asset:javascript src="jquery.min.js"/>
-        <asset:javascript src="collapse.js"/>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <asset:javascript src="bootstrap.min.js"/>
     </head>
 
         <body>

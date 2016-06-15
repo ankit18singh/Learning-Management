@@ -9,11 +9,11 @@
 <html>
 <head>
     <title>Login</title>
-    <g:render template="/assignment/template"/>
+
 </head>
 
 <body>
-
+        <g:render template="/assignment/template"/>
         <div class="container text-center heading">
             <h1 class="text-capitalize">Login Page</h1>
         </div>
