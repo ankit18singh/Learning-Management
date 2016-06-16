@@ -18,7 +18,7 @@
         <h1 class="text-capitalize">All User Details</h1>
     </div>
     <div class="container">
-        <table class="table table-hover table-responsive">
+        <table class="table table-condensed">
             <thead>
                 <th>FullName</th>
                 <th>UserName</th>

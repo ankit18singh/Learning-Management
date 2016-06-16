@@ -18,6 +18,7 @@
         <h1 class="text-capitalize">Current User Details</h1>
     </div>
     <div class="container text-justify formdiv">
+        <g:if test="${Current}">
         <dl class="dl-horizontal">
             <dt>Full Name:</dt>
                 <dd>${Current.fullName}</dd>
@@ -30,6 +31,7 @@
             <dt>Age:</dt>
                 <dd>${Current.age}</dd>
         </dl>
+        </g:if>
     </div>
 </body>
 </html>
