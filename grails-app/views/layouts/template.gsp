@@ -32,9 +32,12 @@
             color: white;
 
         }
-        .navbar{
+        .navbar, .footer{
             background: linear-gradient( #008db7,#006dba);
             color:white;
+        }
+        .abc{
+            min-height: 500px;
         }
         #linkcol{
             color:white;
@@ -75,6 +78,24 @@
         </div>
     </div>
 </nav>
+
+<div class="abc">
 <g:layoutBody/>
+    <footer class="footer footer-fixed-bottom">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2 class="text-capitalize">Developed by</h2>
+                    <p> Ankit Kumar Singh</p>
+                    <p> Copyright &copy; 2016</p>
+                </div>
+                <div class="col-sm-6">
+                    <h2 class="text-capitalize">Contact:</h2>
+                    <p>+917583042202</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
 </body>
 </html>
