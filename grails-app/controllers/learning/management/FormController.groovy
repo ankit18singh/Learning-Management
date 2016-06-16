@@ -6,7 +6,7 @@ class FormController {
         println("Success")
         println(params)
 
-        User u1= new User([myUser: params.Uname,myEmail: params.email, myPass: params.Pass])
+        User2 u1= new User2([myUser: params.Uname,myEmail: params.email, myPass: params.Pass])
         if (!u1.checkPasswordLength()) {
             redirect(action : "erro")
 1        }

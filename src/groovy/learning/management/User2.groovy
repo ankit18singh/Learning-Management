@@ -3,7 +3,7 @@ package learning.management
 /**
  * Created by ankit on 11/6/16.
  */
-class User {
+class User2 {
     String myUser, myEmail, myPass
 
     void myTask(){
