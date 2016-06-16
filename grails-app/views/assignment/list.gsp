@@ -10,7 +10,6 @@
 <head>
     <meta name='layout' content="template">
     <title>ListPage</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 
@@ -29,12 +28,12 @@
             </thead>
             <tbody>
                 <g:each in="${ListAll}" var="content">
-                        <tr class="${content.myAge < 20 ? 'bg-danger':''}">
-                            <td>${content.myFullName}</td>
-                            <td>${content.myUserName}</td>
-                            <td>${content.myEmail}</td>
-                            <td>${content.myPassword}</td>
-                            <td>${content.myAge}</td>
+                        <tr class="${content.age < 20 ? 'bg-danger':''}">
+                            <td>${content.fullName}</td>
+                            <td>${content.userName}</td>
+                            <td>${content.email}</td>
+                            <td>${content.password}</td>
+                            <td>${content.age}</td>
                         </tr>
                 </g:each>
             </tbody>

@@ -6,13 +6,13 @@ class AssignmentController {
         [CurrentPage: 'userLogin']
     }
     def abc(){
-        UserData u1= new UserData([myFullName:params.fullname, myUserName:params.username, myEmail: params.email, myPassword: params.password, myAge: params.int('age')])
+        Person u1= new Person([fullName:params.fullname, userName:params.username, email: params.email, password: params.password, age: params.int('age')])
         session.currentUser = u1
         if(!session.allUsers)
         {
             session.allUsers= []
         }
-
+        u1.save()
         println session.currentUser
         session.allUsers.add(u1)
         redirect(action: 'show')

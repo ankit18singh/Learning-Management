@@ -20,15 +20,15 @@
     <div class="container text-justify formdiv">
         <dl class="dl-horizontal">
             <dt>Full Name:</dt>
-                <dd>${Current.myFullName}</dd>
+                <dd>${Current.fullName}</dd>
             <dt>User Name:</dt>
-                <dd>${Current.myUserName}</dd>
+                <dd>${Current.userName}</dd>
             <dt>Email ID:</dt>
-                <dd>${Current.myEmail}</dd>
+                <dd>${Current.email}</dd>
             <dt>Password:</dt>
-                <dd>${Current.myPassword}</dd>
+                <dd>${Current.password}</dd>
             <dt>Age:</dt>
-                <dd>${Current.myAge}</dd>
+                <dd>${Current.age}</dd>
         </dl>
     </div>
 </body>

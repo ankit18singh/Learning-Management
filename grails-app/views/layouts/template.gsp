@@ -52,6 +52,7 @@
     <asset:stylesheet src="temp.css"/>
     <asset:javascript src="jquery.min.js"/>
     <asset:javascript src="bootstrap.min.js"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <g:layoutHead/>
 </head>
 
