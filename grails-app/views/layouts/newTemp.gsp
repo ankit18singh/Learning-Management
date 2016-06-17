@@ -14,6 +14,9 @@
     .footer{
         padding: 3.3%;
     }
+    #foo{
+        border-right: 1px solid white;
+    }
     .navbar, .footer{
         background: linear-gradient(to right,cornflowerblue,mediumturquoise);
         color: #f5f5f5;
@@ -30,6 +33,9 @@
     }
     .active > #linkcol{
         color: blue;
+    }
+    #body{
+        padding: 10%;
     }
     </style>
     <asset:javascript src="jquery.min.js"/>
@@ -63,9 +69,9 @@
     </nav>
 
     <div class="container-fluid">
+        <h1 class="page-header text-center text-uppercase">${params.action}</h1>
         <div class="row">
             <div class="col-sm-9">
-                <h1 class="page-header text-capitalize">${params.action}</h1>
             <div id="body">
                 <g:pageProperty name="page.body"/>
             </div>
@@ -80,7 +86,7 @@
 
     <footer class="footer text-center">
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-6" id="foo">
                 <h3 class="">Developed by</h3>
                 <p>Ankit Kumar Singh</p>
             </div>
