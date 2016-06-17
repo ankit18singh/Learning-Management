@@ -12,9 +12,6 @@
 </head>
 
 <body>
-    <content tag="pagehead">
-        <h1 class="page-header">List</h1>
-    </content>
     <content tag="body">
         <table class="table  table-responsive table-hover">
             <thead>

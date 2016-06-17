@@ -12,10 +12,6 @@
 </head>
 
 <body>
-    <content tag="pagehead">
-        <h1 class="page-header">Login</h1>
-    </content>
-
     <content tag="body">
         <g:form action="redirec" method="post" class="form-group form-horizontal">
             <div class="form-group">

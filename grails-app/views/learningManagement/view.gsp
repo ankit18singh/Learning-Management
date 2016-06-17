@@ -13,9 +13,6 @@
 </head>
 
 <body>
-    <content tag="pagehead">
-        <h1 class="page-header">View</h1>
-    </content>
     <content tag="body">
         <g:if test="${Viewdata}">
         <dl class="dl-horizontal">

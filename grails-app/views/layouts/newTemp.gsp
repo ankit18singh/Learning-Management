@@ -9,31 +9,31 @@
 <html>
 <head>
     <title></title>
-    <style>
-        .footer{
-            padding: 2%;
-        }
-        .navbar, .footer{
-            background: linear-gradient(to right,cornflowerblue,mediumturquoise);
-            color: #f5f5f5;
-        }
-        .navbar{
-            margin-bottom: 0;
-        }
-        #linkcol{
-            color: white;
-        }
-        .side{
-            background: linear-gradient(white,lightgray);
-            margin: 0;
-        }
-        .active > #linkcol{
-            color: blue;
-        }
-    </style>
     <asset:stylesheet src="bootstrap.min.css"/>
+    <style>
+    .footer{
+        padding: 3.3%;
+    }
+    .navbar, .footer{
+        background: linear-gradient(to right,cornflowerblue,mediumturquoise);
+        color: #f5f5f5;
+    }
+    .navbar{
+        margin-bottom: 0;
+    }
+    #linkcol{
+        color: white;
+    }
+    .side{
+        background: linear-gradient(white,lightgray);
+        margin: 0;
+    }
+    .active > #linkcol{
+        color: blue;
+    }
+    </style>
     <asset:javascript src="jquery.min.js"/>
-    <asset:javascript src="bootstrap.min.css"/>
+    <asset:javascript src="bootstrap.min.js"/>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <g:layoutHead/>
@@ -65,9 +65,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-9">
-                <div id="pagehead">
-                    <g:pageProperty name="page.pagehead"/>
-                </div>
+                <h1 class="page-header text-capitalize">${params.action}</h1>
             <div id="body">
                 <g:pageProperty name="page.body"/>
             </div>
