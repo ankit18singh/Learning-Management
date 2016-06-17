@@ -61,7 +61,7 @@
             <div class="collapse navbar-collapse" id="buttondiv">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="${params.action == 'login' ? 'active':''}"><g:link action="login" elementId="linkcol">Login</g:link></li>
-                    <li class="${params.action == 'view' ? 'active':''}"><g:link action="view" elementId="linkcol">View</g:link></li>
+
                     <li class="${params.action == 'list' ? 'active':''}"><g:link action="list" elementId="linkcol">List</g:link></li>
                 </ul>
             </div>

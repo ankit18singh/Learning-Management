@@ -15,20 +15,28 @@
     <content tag="body">
         <table class="table  table-responsive table-hover">
             <thead>
+                <th>ID</th>
                 <th>First Name</th>
                 <th>Last Name</th>
                 <th>Email ID</th>
                 <th>Password</th>
                 <th>Age</th>
+                <th>Action</th>
             </thead>
             <tbody>
             <g:each in="${ViewAll}" var="tab">
                 <tr class="${tab.myAge < 20 ?'bg-danger':''}">
+                    <td>
+                        <g:link action="view" id="${tab.id}">
+                        ${tab.id}
+                        </g:link>
+                    </td>
                     <td>${tab.firstName}</td>
                     <td>${tab.lastName}</td>
                     <td>${tab.emailId}</td>
                     <td>${tab.myPassword}</td>
                     <td>${tab.myAge}</td>
+                    <td><g:link action="edit" id="${tab.id}">Edit</g:link></td>
                 </tr>
             </g:each>
             </tbody>
