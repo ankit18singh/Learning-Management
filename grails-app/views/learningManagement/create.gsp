@@ -30,7 +30,7 @@
                     <g:textField name="lastname" class="form-control" value="${myu1.lastName}"/>
                 </div>
             </div>
-            <div class="form-group ${hasErrors(bean: myu1, field: 'emailid', 'has-error')}">
+            <div class="form-group ${hasErrors(bean: myu1, field: 'email', 'has-error')}">
                 <div class="col-sm-2"><label for="emailid" class="control-label">Email ID:</label>
                 </div>
                 <div class="col-sm-8">

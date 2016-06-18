@@ -12,7 +12,7 @@ class LearningManagementController {
         println u1.errors
         if (u1.hasErrors())
         {
-            render(view: "create", model:[myu1: u1])
+            render(view: "create", model: [myu1: u1])
             return
         }
         redirect(action: "list", id: u1.id)
