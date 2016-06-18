@@ -10,9 +10,13 @@
 <head>
     <title></title>
     <asset:stylesheet src="bootstrap.min.css"/>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <style>
     .footer{
         padding: 3.3%;
+    }
+    #red{
+        color: red;
     }
     #foo{
         border-right: 1px solid white;
@@ -39,6 +43,8 @@
     }
     </style>
     <asset:javascript src="jquery.min.js"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <asset:javascript src="bootstrap.min.js"/>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -60,7 +66,9 @@
 
             <div class="collapse navbar-collapse" id="buttondiv">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="${params.action == 'login' ? 'active':''}"><g:link action="login" elementId="linkcol">Login</g:link></li>
+                    <li
+                            class="${params.action == 'login' ? 'active':''}"><g:link action="create"
+                                                                                      elementId="linkcol">Create</g:link></li>
 
                     <li class="${params.action == 'list' ? 'active':''}"><g:link action="list" elementId="linkcol">List</g:link></li>
                 </ul>

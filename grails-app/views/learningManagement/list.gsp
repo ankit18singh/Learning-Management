@@ -37,10 +37,15 @@
                     <td>${tab.myPassword}</td>
                     <td>${tab.myAge}</td>
                     <td><g:link action="edit" id="${tab.id}">Edit</g:link></td>
+                    <td><g:link action="delete" id="${tab.id}"
+                                elementId="red">
+                        &nbsp;
+                        <span class="glyphicon glyphicon-remove"></span></g:link></td>
                 </tr>
             </g:each>
             </tbody>
         </table>
+      <g:link action="create"><button type="button" class="btn btn-lg btn-success pull-right">Create User</button></g:link>
     </content>
     <content tag="sidebar">
         <p style="padding:5%;">

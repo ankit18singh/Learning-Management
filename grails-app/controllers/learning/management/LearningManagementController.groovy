@@ -2,7 +2,7 @@ package learning.management
 
 class LearningManagementController {
 
-    def login() {
+    def create() {
 
     }
 
@@ -37,7 +37,9 @@ class LearningManagementController {
 
     def delete()
     {
-
+        User del= User.get(params.id)
+        del.delete(flush: true)
+        redirect(action: "list")
     }
     def edit(){
         [userInstance: User.get(params.id)]
