@@ -14,43 +14,43 @@
 <body>
     <content tag="body">
         <g:form action="redirec" method="post" class="form-group form-horizontal">
-            <div class="form-group">
+            <div class="form-group ${hasErrors(bean: myu1, field: 'firstname', 'has-error')}">
                 <div class="col-sm-2">
                     <label for="firstname" class="control-label">First Name:</label>
                 </div>
                 <div class="col-sm-8">
-                    <g:textField name="firstname" class="form-control"/>
+                    <g:textField name="firstname" class="form-control" value="${myu1.firstName}"/>
                 </div>
             </div>
-            <div class="form-group">
+            <div class="form-group ${hasErrors(bean: myu1, field: 'lastname', 'has-error')}">
                 <div class="col-sm-2">
                     <label for="lastname" class="control-label">Last Name:</label>
                 </div>
                 <div class="col-sm-8">
-                    <g:textField name="lastname" class="form-control"/>
+                    <g:textField name="lastname" class="form-control" value="${myu1.lastName}"/>
                 </div>
             </div>
-            <div class="form-group">
+            <div class="form-group ${hasErrors(bean: myu1, field: 'emailid', 'has-error')}">
                 <div class="col-sm-2"><label for="emailid" class="control-label">Email ID:</label>
                 </div>
                 <div class="col-sm-8">
-                    <g:textField name="emailid" class="form-control"/>
+                    <g:textField name="emailid" class="form-control" value="${myu1.emailId}"/>
                 </div>
             </div>
-            <div class="form-group">
+            <div class="form-group ${hasErrors(bean: myu1, field: 'password', 'has-error')}">
                 <div class="col-sm-2">
                     <label for="password" class="control-label">Password:</label>
                 </div>
                 <div class="col-sm-8">
-                    <g:textField name="password" class="form-control"/>
+                    <g:passwordField name="password" class="form-control" value="${myu1.myPassword}"/>
                 </div>
             </div>
-            <div class="form-group">
+            <div class="form-group ${hasErrors(bean: myu1, field: 'age', 'has-error')}">
                 <div class="col-sm-2" class="control-label">
                     <label for="age">Age:</label>
                 </div>
                 <div class="col-sm-8">
-                    <g:textField name="age" class="form-control"/>
+                    <g:textField name="age" class="form-control" value="${myu1.myAge}"/>
                 </div>
             </div>
             <div class="form-group">

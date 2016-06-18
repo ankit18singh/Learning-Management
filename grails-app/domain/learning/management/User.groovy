@@ -7,5 +7,7 @@ class User {
     String myPassword
     int myAge
     static constraints = {
+        emailId(email: true)
+        myAge(max: 200)
     }
 }

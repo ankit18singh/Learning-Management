@@ -43,7 +43,7 @@
                     <label for="password" class="control-label">Password:</label>
                 </div>
                 <div class="col-sm-8">
-                    <g:textField name="password" class="form-control" value="${userInstance.myPassword}"/>
+                    <g:passwordField name="password" class="form-control" value="${userInstance.myPassword}"/>
                 </div>
             </div>
             <div class="form-group">
