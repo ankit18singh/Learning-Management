@@ -9,8 +9,9 @@
 <html>
 <head>
     <title></title>
-    <asset:stylesheet src="bootstrap.min.css"/>
+
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <asset:stylesheet src="bootstrap.min.css"/>
     <style>
     .footer{
         padding: 3.3%;

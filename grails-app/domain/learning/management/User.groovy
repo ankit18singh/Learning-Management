@@ -6,8 +6,11 @@ class User {
     String emailId
     String myPassword
     int myAge
+
     static constraints = {
-        emailId(email: true)
+        firstName(blank: false)
+        lastName(blank: false)
+        emailId(email: true, blank: false)
         myAge(max: 200)
     }
 }
