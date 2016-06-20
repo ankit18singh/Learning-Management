@@ -19,9 +19,9 @@
                     <label for="firstname" class="control-label">First Name:</label>
                 </div>
                 <div class="col-sm-8">
-                    <g:textField name="firstname" class="form-control" value="${myu1.firstName}"/> <span
-                        class="glyphicon glyphicon-alert" id="alert"></span>
-                       %{--<script>
+                    <g:textField name="firstname" class="form-control" value="${myu1.firstName}"/>
+                    %{--<span class="glyphicon glyphicon-alert" id="alert"></span>
+                       <script>
                             $(document).ready(function(){
                                 $("#alert").hide();
                                 if($("div").hasClass('has-error'))

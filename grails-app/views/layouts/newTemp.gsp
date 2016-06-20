@@ -35,6 +35,7 @@
     .side{
         background: linear-gradient(white,lightgray);
         margin: 0;
+        padding: 2%;
     }
     .active > #linkcol{
         color: blue;
