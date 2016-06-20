@@ -50,4 +50,28 @@ class LearningManagementController {
     def edit(){
         [userInstance: User.get(params.id)]
     }
+    def search(){
+
+    }
+    def test(){
+        if([xyz:1])
+        {
+            User userTest = User.findByEmailIdLikeAndMyAgeGreaterThan("%${params.search1}%","${params.int('search2')}")
+            println userTest
+            render(view: "search", model:[userTestIns: userTest])
+        }
+        else if([xyz:2])
+        {
+            User userTest = User.findByEmailIdLikeAndMyAge("%${params.search1}%","${params.int('search2')}")
+            println userTest
+            render(view: "search", model:[userTestIns: userTest])
+        }
+        else if([xyz:3]){
+
+            User userTest = User.findByEmailIdLikeAndMyAgeLessThan("%${params.search1}%","${params.int('search2')}")
+            println userTest
+            render(view: "search", model:[userTestIns: userTest])
+        }
+
+    }
 }
