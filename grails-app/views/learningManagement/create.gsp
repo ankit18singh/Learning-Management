@@ -21,6 +21,15 @@
                 <div class="col-sm-8">
                     <g:textField name="firstname" class="form-control" value="${myu1.firstName}"/> <span
                         class="glyphicon glyphicon-alert" id="alert"></span>
+                       %{--<script>
+                            $(document).ready(function(){
+                                $("#alert").hide();
+                                if($("div").hasClass('has-error'))
+                                {
+                                    $("#alert").show();
+                                }
+                            });
+                        </script>--}%
                 </div>
             </div>
             <div class="form-group ${hasErrors(bean: myu1, field: 'lastName', 'has-error')}">
@@ -36,6 +45,7 @@
                 </div>
                 <div class="col-sm-8">
                     <g:textField name="emailid" class="form-control" value="${myu1.emailId}"/>
+                    <g:renderErrors bean="${myu1}" field="emailId"/>
                 </div>
             </div>
             <div class="form-group ${hasErrors(bean: myu1, field: 'myPassword', 'has-error')}">
