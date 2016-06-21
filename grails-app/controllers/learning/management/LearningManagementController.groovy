@@ -56,7 +56,7 @@ class LearningManagementController {
     def test(){
         int choice = params.int('selection')
         println choice
-        if(choice == 1)
+        /*if(choice == 1)
         {
             List userTest = User.findAllByEmailIdLikeAndMyAgeGreaterThan("%${params.search1}%",${params.int ('search2')})
             println "value is $userTest"
@@ -75,7 +75,29 @@ class LearningManagementController {
             List userTest = User.findAllByEmailIdLikeAndMyAgeLessThan("%${params.search1}%",${params.int('search2')})
             println userTest
             render(view: "search", model:[userTestIns: userTest])
-        }
+        }*/
+
+            def a = User.createCriteria()
+            def userTest = a.list(){
+                println params.search1
+                like("emailId", "%${params.search1}%")
+                println params.int('search2')
+                and{
+                    if(choice == 1){
+                        gt("myAge", params.int('search2'))
+                    }
+                    else if(choice == 2)
+                    {
+                        eq("myAge", params.int('search2'))
+                    }
+                    else if(choice ==3){
+                        lt("myAge", params.int('search2'))
+                    }
+                }
+            }
+            println "Hello userTest $userTest"
+           // println "Hello A ${a.toString()}"
+            render (view: "search", model : [userTestIns: userTest])
 
     }
 }
