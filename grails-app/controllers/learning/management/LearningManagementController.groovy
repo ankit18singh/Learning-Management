@@ -79,18 +79,15 @@ class LearningManagementController {
 
             def a = User.createCriteria()
             def userTest = a.list(){
-                println params.search1
-                like("emailId", "%${params.search1}%")
-                println params.int('search2')
-                and{
-                    if(choice == 1){
+                or {
+                    println params.search1
+                    like("emailId", "%${params.search1}%")
+                    println params.int('search2')
+                    if (choice == 1) {
                         gt("myAge", params.int('search2'))
-                    }
-                    else if(choice == 2)
-                    {
+                    } else if (choice == 2) {
                         eq("myAge", params.int('search2'))
-                    }
-                    else if(choice ==3){
+                    } else if (choice == 3) {
                         lt("myAge", params.int('search2'))
                     }
                 }
