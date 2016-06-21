@@ -58,21 +58,21 @@ class LearningManagementController {
         println choice
         if(choice == 1)
         {
-            List userTest = User.findAllByEmailIdLikeAndMyAgeGreaterThan("%${params.search1}%","${params.int ('search2')}")
+            List userTest = User.findAllByEmailIdLikeAndMyAgeGreaterThan("%${params.search1}%",${params.int ('search2')})
             println "value is $userTest"
             render(view: "search", model:[userTestIns: userTest])
         }
 
         else if(choice == 2)
         {
-            List userTest = User.findAllByEmailIdLikeAndMyAgeLessThanEquals("%${params.search1}%", "${params.int ('search2')}")
+            List userTest = User.findAllByMyAgeAndEmailIdLike(params.int ('search2'),"%${params.search1}%")
             println userTest
             render(view: "search", model:[userTestIns: userTest])
         }
 
         else if(choice == 3)
         {
-            List userTest = User.findAllByEmailIdLikeAndMyAgeLessThan("%${params.search1}%","${params.int('search2')}")
+            List userTest = User.findAllByEmailIdLikeAndMyAgeLessThan("%${params.search1}%",${params.int('search2')})
             println userTest
             render(view: "search", model:[userTestIns: userTest])
         }

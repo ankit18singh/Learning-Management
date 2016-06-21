@@ -45,8 +45,8 @@
             </div>
         </g:form>
         <div id="result">
-            <h2 class="page-header text-center">Result</h2>
             <g:if test="${userTestIns}">
+                <h2 class="page-header text-center">Result</h2>
                 <table class="table  table-responsive table-hover">
                     <thead>
                     <th>ID</th>
